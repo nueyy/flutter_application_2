@@ -61,7 +61,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            // กล่องสัญญาณไฟ
             Container(
               width: 160,
               padding: const EdgeInsets.symmetric(vertical: 18),
@@ -152,7 +151,7 @@ class _LightCircle extends StatelessWidget {
     return AnimatedOpacity(
       duration: duration,
       curve: Curves.easeInOut,
-      opacity: isOn ? 1.0 : 0.3, // ตามเงื่อนไขโจทย์
+      opacity: isOn ? 1.0 : 0.3,
       child: Container(
         width: size,
         height: size,
